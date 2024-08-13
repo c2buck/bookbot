@@ -1,5 +1,3 @@
-print("--- Begin report of books/frankenstein.txt ---")
-
 def main():
     book_path = "books/frankenstein.txt"
     text = get_book_text(book_path)
@@ -8,6 +6,7 @@ def main():
     character_count_result = count_characters(text)
     letter_count_result = count_letters(text)
 
+    print(f"--- Begin report of {book_path} ---")
     print(f"Total word count: {word_count_result}") #word count
     
     #convert the dictionary to a list of dictionaries
